@@ -1,18 +1,18 @@
-<span id="message"></span>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+<span id="message" style="font-size: 64px;"></span>
 
 <script>
-
-
 var msg = "Today is "
-
-
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var today = new Date()
 msg = msg + days[today.getDay()] + ". "
-
-
-
 
 var zacetek = new Date('10/1/2021')
 var dnevi = Math.ceil((today-zacetek)/(1000*60*60*24))
@@ -24,7 +24,14 @@ if (dnevi%2==0){
 	document.body.style.backgroundColor = "#ff9191"
 }
 
-
 var x = document.getElementById("message");
 x.innerHTML = msg
 </script>
+
+</body>
+</html>
+
+
+
+
+
