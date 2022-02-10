@@ -16,7 +16,7 @@ var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'S
 var today = new Date()
 msg = msg + days[today.getDay()] + ". "
 
-var zacetek = new Date('10/1/2021')
+var zacetek = new Date('11/1/2021')
 var dnevi = Math.ceil((today-zacetek)/(1000*60*60*24))
 if (dnevi%2==0){
 	msg = msg + "<b>YES</b>, it's time for your pill!"
